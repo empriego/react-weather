@@ -15,7 +15,6 @@
 .navbar input.search-field:hover,
 .navbar input.search-field:focus {
   outline: 0px !important;
-  -webkit-appearance: none;
   box-shadow: none !important;
   border: 1px solid #ebf0f58c;
   background-color: #ebf0f58c;
