@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./NavBar";
 import CurrentWeather from "./CurrentWeather";
 import WeekForecast from "./WeekForecast";
+import CreditLabel from "./CreditLabel";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <CreditLabel />
     </div>
   );
 }

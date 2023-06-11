@@ -1,0 +1,17 @@
+.credit-label {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: #18334d6e;
+  font-weight: 200;
+  text-align: center;
+  font-family: monospace;
+}
+.credit-label a {
+  color: #18334d6e;
+  text-decoration: none;
+}
+.credit-label a:active,
+.credit-label a:hover {
+  color: #18334d;
+}
