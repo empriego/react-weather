@@ -1,15 +1,22 @@
+import React from "react";
 import "./App.css";
-import Weather from "./Weather";
 
-function App() {
+import NavBar from "./NavBar";
+import CurrentWeather from "./CurrentWeather";
+import WeekForecast from "./WeekForecast";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Emilia</h1>
-        <Weather city="Paris" />
-      </header>
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <div className="weather-app">
+            <NavBar />
+            <CurrentWeather />
+            <WeekForecast />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,47 @@
+.current-weather {
+  padding-top: 2rem;
+}
+
+.current-weather h1 {
+  font-size: 660%;
+  margin-top: 0.8rem;
+  justify-self: center;
+  line-height: 100%;
+  font-weight: 200;
+  letter-spacing: -0.3rem;
+}
+
+.current-weather h2 {
+  font-size: 190%;
+  padding: 0;
+}
+
+.current-weather img.weather-img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.current-weather ul {
+  padding: 0;
+  margin: 0;
+}
+
+.current-weather li {
+  font-weight: 300;
+  font-size: 0.9rem;
+  list-style-type: none;
+  color: #18334d80;
+  line-height: 160%;
+  letter-spacing: 0.02rem;
+}
+
+.current-weather li::first-letter {
+  text-transform: capitalize;
+}
+
+.current-weather .unit {
+  font-size: 186%;
+  font-weight: 300;
+  color: #18334d;
+  letter-spacing: 0.1rem;
+}
