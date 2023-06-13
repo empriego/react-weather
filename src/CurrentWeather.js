@@ -42,7 +42,7 @@ export default function CurrentWeather() {
         </div>
 
         <div className="col-6 d-flex justify-content-start">
-          <div className="row  px-0 align-self-end">
+          <div className="row px-0 align-self-end">
             <h2 className="px-0">
               <spam className="degree-value" id="celsius">
                 °C

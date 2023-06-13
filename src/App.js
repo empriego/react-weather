@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 
+// components
 import NavBar from "./NavBar";
 import CurrentWeather from "./CurrentWeather";
 import WeekForecast from "./WeekForecast";
