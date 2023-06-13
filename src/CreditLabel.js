@@ -5,7 +5,7 @@ export default function CreditLabel() {
   return (
     <div className="credit-label justify-content-center">
       <small>
-        <a href="https://github.com/empriego/my-weather-app" target="blank">
+        <a href="https://github.com/empriego/react-weather" target="blank">
           open source code
         </a>{" "}
         by{" "}
