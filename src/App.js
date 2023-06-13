@@ -9,14 +9,12 @@ import CreditLabel from "./CreditLabel";
 
 export default function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <div className="weather-app-wrapper">
-          <div className="weather-app">
-            <NavBar />
-            <CurrentWeather />
-            <WeekForecast />
-          </div>
+    <div className="App container pt-5">
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
+          <NavBar />
+          <CurrentWeather />
+          <WeekForecast />
         </div>
       </div>
       <CreditLabel />
