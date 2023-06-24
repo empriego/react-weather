@@ -27,7 +27,7 @@ export default function WeekForecast() {
         </div>
         <div className="col-md-2 col-sm-6 col-xs-6 py-2 text-center">
           <h3>Fri</h3>
-          <img src={Cloud} class="img-forecast-sm" alt="" />
+          <img src={Cloud} className="img-forecast-sm" alt="" />
           <p>
             16°<span className="p-soft"> | 4°</span>
           </p>

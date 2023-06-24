@@ -10,7 +10,7 @@ export default function CreditLabel() {
         </a>{" "}
         by{" "}
         <a href="/" target="blank">
-          Emilia Priego
+          Emilia
         </a>
       </small>
     </div>

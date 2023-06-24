@@ -13,7 +13,7 @@ export default function App() {
       <div className="weather-app-wrapper">
         <div className="weather-app">
           <NavBar />
-          <CurrentWeather />
+          <CurrentWeather defaultCity="Bath" />
           <WeekForecast />
         </div>
       </div>

@@ -1,60 +1,74 @@
-import React from "react";
-import "./CurrentWeather.css";
-import "./App.css";
+import React, { useState } from "react";
+import axios from "axios";
 import Sunny from "./img/01d.png";
 
-export default function CurrentWeather() {
-  let weatherData = {
-    city: "Zürich",
-    date: "Tuesday 11:00",
-    description: "Mostly sunny",
-    temperature: "14",
-    humidity: "54%",
-    wind: "6",
-  };
+// Styles
+import "./App.css";
+import "./CurrentWeather.css";
 
-  return (
-    <div className="row px-md-5 current-weather">
-      <div class="row p-0 mx-0 mb-2 col-md-6 align-items-center ">
-        <div className="col-6  m-0">
-          <img
-            src={Sunny}
-            className="sunny-lg pr-2 clearflix float-end"
-            alt={weatherData.description}
-          />
+export default function CurrentWeather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
+
+  function handleResponse(response) {
+    console.log(response.data);
+
+    setWeatherData({
+      ready: true,
+      temperature: response.data.main.temp,
+      city: response.data.name,
+      date: "Saturday 14:26",
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+    });
+  }
+
+  if (weatherData.ready) {
+    return (
+      <div className="row px-md-5 current-weather">
+        <div className="row p-0 mx-0 mb-2 col-md-6 align-items-center">
+          <div className="col-6 m-0">
+            <img src={Sunny} className="sunny-lg pr-2 clearflix float-end" />
+          </div>
+          <div className="col-6 px-0 d-flex justify-content-start">
+            <div className="row p-0 m-0 align-self-end text-capitalize">
+              <h2 id="searched-city">{weatherData.city}</h2>
+              <ul>
+                <li id="time-date">{weatherData.date}</li>
+                <li id="description">{weatherData.description}</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="col-6 px-0 d-flex justify-content-start">
-          <div className="row p-0 m-0 align-self-end ">
-            <h2 id="searched-city">{weatherData.city}</h2>
-            <ul>
-              <li id="time-date">{weatherData.date}</li>
-              <li id="description">{weatherData.description}</li>
-            </ul>
+
+        <div className="row p-0 mx-0 mb-2 col-md-6 col-sm-12 align-items-center ">
+          <div className="col-6 m-0">
+            <h1 className=" px-2 d-flex clearflix float-end" id="degrees">
+              {Math.round(weatherData.temperature)}
+            </h1>
+          </div>
+
+          <div className="col-6 d-flex justify-content-start">
+            <div className="row px-0 align-self-end">
+              <h2 className="px-0">
+                <span className="degree-value" id="celsius">
+                  °C
+                </span>
+              </h2>
+              <ul>
+                <li id="wind">Wind: {weatherData.wind} km/h</li>
+                <li id="humidity">Humidity: {weatherData.humidity}%</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row p-0 mx-0 mb-2 col-md-6 col-sm-12 align-items-center ">
-        <div className="col-6  m-0 ">
-          <h1 className=" px-2 d-flex clearflix float-end" id="degrees">
-            {weatherData.temperature}
-          </h1>
-        </div>
-
-        <div className="col-6 d-flex justify-content-start">
-          <div className="row px-0 align-self-end">
-            <h2 className="px-0">
-              <spam className="degree-value" id="celsius">
-                °C
-              </spam>
-            </h2>
-            <ul>
-              <li id="wind">Wind: {weatherData.wind} km/h</li>
-              <li id="humidity">Humidity: {weatherData.humidity}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
+  } else {
+    const units = "metric";
+    const key = "3499ef150985eccadd080ff408a018df";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${key}&units=${units}`;
+    axios.get(url).then(handleResponse);
+    return <p>Loading notifications..</p>;
+  }
 }
