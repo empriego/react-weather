@@ -1,4 +1,4 @@
-.nav-bar input.search-field {
+.weather input.search-field {
   border-radius: 100px;
   background-color: #ebf0f58c;
   border: 1px solid #ebf0f58c;
@@ -11,9 +11,9 @@
   margin-left: 1rem;
 }
 
-.navbar input.search-field:active,
-.navbar input.search-field:hover,
-.navbar input.search-field:focus {
+.weather input.search-field:active,
+.weather input.search-field:hover,
+.weather input.search-field:focus {
   outline: 0px !important;
   box-shadow: none !important;
   border: 1px solid #ebf0f58c;
@@ -22,14 +22,14 @@
   box-shadow: none;
 }
 
-.navbar input:-webkit-autofill,
-.navbar input:-webkit-autofill:hover,
-.navbar input:-webkit-autofill:focus,
-.navbar input:-webkit-autofill:active {
+.weather input:-webkit-autofill,
+.weather input:-webkit-autofill:hover,
+.weather input:-webkit-autofill:focus,
+.weather input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.nav-bar input.search-field::placeholder {
+.weather input.search-field::placeholder {
   color: #18334d25;
 }
 
@@ -48,6 +48,7 @@ button.btn-search:focus {
 button.btn-search:hover,
 button.btn-search:active {
   outline: none;
+  background-color: #18334d;
   box-shadow: 4px 8px 16px #13223834;
   border: none;
 }

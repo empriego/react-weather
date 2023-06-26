@@ -2,25 +2,21 @@
   font-family: "Poppins", sans-serif;
   background-color: #ebf0f6;
   min-height: 100vh;
+  color: #18334d;
 }
 
 /* Headers */
-.app h1,
-h2,
-h3,
-p {
-  color: #18334d;
-  font-weight: 300;
-}
 
 h3 {
   font-size: 1rem;
+  font-weight: 300;
   line-height: 110%;
   padding-left: 0;
 }
 
 p {
   font-size: 0.8rem;
+  font-weight: 300;
 }
 
 .App .weather-app-wrapper {
