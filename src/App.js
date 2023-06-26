@@ -3,7 +3,6 @@ import "./App.css";
 
 // components
 import Weather from "./Weather";
-import WeekForecast from "./WeekForecast";
 import CreditLabel from "./CreditLabel";
 
 export default function App() {
