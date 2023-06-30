@@ -42,9 +42,7 @@
   text-transform: capitalize;
 }
 
-.weather-info .unit {
-  font-size: 186%;
-  font-weight: 300;
-  color: #18334d;
-  letter-spacing: 0.1rem;
+.weather-info a {
+  text-decoration: none;
+  color: #18334d80;
 }

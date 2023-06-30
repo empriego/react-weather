@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 // Styles
 import "./WeatherInfo.css";
@@ -30,25 +31,11 @@ export default function WeatherInfo(props) {
       </div>
 
       <div className="row p-0 mx-0 mb-2 col-md-6 col-sm-12 align-items-center ">
-        <div className="col-6 m-0">
-          <h1 className=" px-2 d-flex clearflix float-end" id="degrees">
-            {Math.round(props.data.temperature)}
-          </h1>
-        </div>
-
-        <div className="col-6 d-flex justify-content-start">
-          <div className="row px-0 align-self-end">
-            <h2 className="px-0">
-              <span className="degree-value" id="celsius">
-                °C
-              </span>
-            </h2>
-            <ul>
-              <li id="wind">Wind: {props.data.wind} km/h</li>
-              <li id="humidity">Humidity: {props.data.humidity}%</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherTemperature
+          celsius={props.data.temperature}
+          wind={props.data.wind}
+          humidity={props.data.humidity}
+        />
       </div>
     </div>
   );
