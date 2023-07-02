@@ -4,6 +4,7 @@ import Lens from "./img/lens.png";
 
 // Components
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 // Styles
 import "./App.css";
@@ -60,8 +61,8 @@ export default function Weather(props) {
             </button>
           </form>
         </nav>
-
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {

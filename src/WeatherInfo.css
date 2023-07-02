@@ -46,3 +46,8 @@
   text-decoration: none;
   color: #18334d80;
 }
+
+.weather-info a:hover {
+  text-decoration: none;
+  color: #18334d;
+}
