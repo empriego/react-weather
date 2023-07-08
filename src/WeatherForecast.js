@@ -19,7 +19,7 @@ export default function WeatherForecast(props) {
         <div class="forecast-temperature">
           <p>
             <span className="forecast-max-temperature">30°</span>
-            <span className="p-soft">|</span>
+            <span className="p-soft px-1">|</span>
             <span className="p-soft forecast-min-temperature">10°</span>
           </p>
         </div>

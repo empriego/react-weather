@@ -9,12 +9,11 @@
   justify-self: center;
   line-height: 100%;
   font-weight: 200;
-  letter-spacing: -0.3rem;
 }
 
 .weather-info h2 {
   font-size: 190%;
-  font-weight: 300;
+  font-weight: 400;
   color: #18334d;
   padding: 0;
 }
@@ -30,7 +29,7 @@
 }
 
 .weather-info li {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9rem;
   list-style-type: none;
   color: #18334d80;
