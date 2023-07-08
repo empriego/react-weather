@@ -13,6 +13,7 @@
 
 .weather-info h2 {
   font-size: 190%;
+  letter-spacing: 0.04rem;
   font-weight: 400;
   color: #f3f3f6;
   padding: 0;
@@ -30,9 +31,10 @@
 
 .weather-info li {
   font-weight: 400;
+  letter-spacing: 0.04rem;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #f3f3f699;
+  color: #f3f3f673;
   line-height: 160%;
   letter-spacing: 0.02rem;
 }
@@ -42,8 +44,9 @@
 }
 
 .weather-info a {
+  letter-spacing: 0.04rem;
   text-decoration: none;
-  color: #f3f3f699;
+  color: #f3f3f673;
 }
 
 .weather-info a:hover {

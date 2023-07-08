@@ -2,13 +2,13 @@
   font-size: 0.9rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  color: #f4f7f970;
+  color: #f3f3f673;
   font-weight: 200;
   text-align: center;
   font-family: monospace;
 }
 .credit-label a {
-  color: #f4f7f970;
+  color: #f3f3f673;
   text-decoration: none;
 }
 .credit-label a:active,
