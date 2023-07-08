@@ -1,14 +1,14 @@
 .credit-label {
   font-size: 0.9rem;
-  margin-top: 0.5rem;
   margin-bottom: 2rem;
-  color: #f3f3f673;
-  font-weight: 200;
+  color: #5d9795;
+  letter-spacing: 0.03rem;
+  font-weight: 600;
   text-align: center;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
 }
 .credit-label a {
-  color: #f3f3f673;
+  color: #5d9795;
   text-decoration: none;
 }
 .credit-label a:active,

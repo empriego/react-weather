@@ -1,8 +1,8 @@
 .weather input.search-field {
   border-radius: 100px;
   background-color: transparent;
-  border: 3px solid #f3f3f6;
-  color: #f3f3f6;
+  border: 3px solid #d6d5ff;
+  color: #d6d5ff;
   letter-spacing: 0.04rem;
   font-size: 14px;
   font-weight: 400;
@@ -17,7 +17,7 @@
 .weather input.search-field:focus {
   outline: 0px !important;
   box-shadow: none !important;
-  border: 3px solid #f3f3f6;
+  border: 3px solid #d6d5ff;
   background-color: transparent;
   overflow: none;
   box-shadow: none;
@@ -32,7 +32,7 @@
 
 button.btn-search,
 button.btn-search:focus {
-  background-color: #f3f3f6;
+  background-color: #d6d5ff;
   border-radius: 60px;
   border: none;
   height: 40px;

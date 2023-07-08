@@ -2,7 +2,7 @@
   font-family: "Urbanist", sans-serif;
   background-color: #525aac;
   min-height: 100vh;
-  color: #f3f3f6;
+  color: #d6d5ff;
 }
 
 /* Headers */
@@ -23,13 +23,13 @@ p {
 
 .App .weather-app-wrapper {
   max-width: 46rem;
-  margin: 3.5rem auto 1.5rem;
+  margin: 3.5rem auto 1.2rem;
 }
 
 .App .weather-app {
   background-color: #5358ac;
   border-radius: 100px;
-  border: #f3f3f6 solid 3px;
+  border: #b4b4ff solid 3px;
   max-width: 46rem;
   padding: 1.5rem;
 }
