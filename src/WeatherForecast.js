@@ -30,8 +30,8 @@ export default function WeatherForecast(props) {
         </div>
         <div class="forecast-temperature">
           <p>
-            <span className="forecast-max-temperature">30° </span>
-            <span className="p-soft forecast-min-temperature"> 10°</span>
+            <span className="forecast-max-temperature pr-1">30°</span>
+            <span className="p-soft forecast-min-temperature pl-1"> 10°</span>
           </p>
         </div>
       </div>

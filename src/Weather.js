@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Lens from "./img/lens.png";
+import lens from "./img/lens.svg";
 
 // Components
 import WeatherInfo from "./WeatherInfo";
@@ -58,7 +58,7 @@ export default function Weather(props) {
               onChange={handleCityChange}
             />
             <button className="btn btn-search" type="submit">
-              <img src={Lens} className="img-button" alt="Search" />
+              <img src={lens} className="img-button" alt="Search" />
             </button>
           </form>
         </nav>

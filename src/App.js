@@ -7,7 +7,7 @@ import CreditLabel from "./CreditLabel";
 
 export default function App() {
   return (
-    <div className="App container py-5">
+    <div className="App container py-4">
       <div className="weather-app-wrapper">
         <div className="weather-app pb-2">
           <Weather defaultCity="Bath" />

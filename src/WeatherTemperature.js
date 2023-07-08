@@ -16,8 +16,8 @@ export default function WeatherTemperature(props) {
   if (unit === "celsius") {
     return (
       <div className="weather-temperature row p-0 mx-0 mb-2 align-items-center ">
-        <div className="col-6 m-0">
-          <h1 className=" px-2 d-flex clearflix float-end" id="degrees">
+        <div className="col-6 m-0 px-2">
+          <h1 className="px-1 d-flex clearflix float-end" id="degrees">
             {Math.round(props.celsius)}
           </h1>
         </div>
@@ -44,8 +44,8 @@ export default function WeatherTemperature(props) {
     let fahrenheit = (props.celsius * 9) / 5 + 32;
     return (
       <div className="weather-temperature row p-0 mx-0 mb-2 align-items-center ">
-        <div className="col-6 m-0">
-          <h1 className=" px-2 d-flex clearflix float-end" id="degrees">
+        <div className="col-6 px-1 m-0 px-2">
+          <h1 className="px-1 d-flex clearflix float-end" id="degrees">
             {Math.round(fahrenheit)}
           </h1>
         </div>
