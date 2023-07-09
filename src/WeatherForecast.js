@@ -18,9 +18,18 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="weather-forecast">
-        <div className="col-md-2 col-sm-6 col-xs-6 py-2 text-center">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
+        {forecast.map(function (dailyForecast, index) {
+          if (index < 6) {
+            return (
+              <div
+                className="col-md-2 col-6 d-inline-flex justify-content-center text-center py-2"
+                key={index}
+              >
+                <WeatherForecastDay data={dailyForecast} />
+              </div>
+            );
+          }
+        })}
       </div>
     );
   } else {
