@@ -30,10 +30,10 @@
 }
 
 .weather-info li {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #d6d5ff;
+  color: #b4b4ffb8;
   line-height: 160%;
   letter-spacing: 0.04rem;
 }
@@ -42,13 +42,13 @@
   text-transform: capitalize;
 }
 
-.weather-info a {
+/* .weather-info a {
   letter-spacing: 0.04rem;
   text-decoration: none;
   color: #b4b4ffa8;
-}
+} */
 
-.weather-info a:hover {
+/* .weather-info a:hover {
   text-decoration: none;
   color: #b4b4ffa8;
-}
+} */
