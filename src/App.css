@@ -16,7 +16,7 @@ h3 {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
 }
@@ -29,7 +29,7 @@ p {
 .App .weather-app {
   background-color: #5358ac;
   border-radius: 100px;
-  border: #b4b4ff solid 3px;
+  border: #d6d5ff solid 3px;
   max-width: 46rem;
   padding: 1.5rem;
 }
