@@ -30,13 +30,12 @@
 }
 
 .weather-info li {
-  font-weight: 400;
-  letter-spacing: 0.04rem;
+  font-weight: 500;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #b4b4ffa8;
+  color: #d6d5ff;
   line-height: 160%;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.04rem;
 }
 
 .weather-info li::first-letter {
